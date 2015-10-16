@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Labyrinthe: Variables globale</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinthe
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">Projet de langage C - Labyrinthe ENSICAEN 1A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li class="current"><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>Tout</span></a></li>
+      <li><a href="globals_func.html"><span>Fonctions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Définitions&#160;de&#160;type</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Liste de toutes les fonctions, variables, macros, enumérations, et définitions de type avec des liens vers les fichiers auxquels ils appartiennent :</div>
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>BUFFER
+: <a class="el" href="serialization_8h.html#a4f6d63f018385b065d2661bea59520a1">serialization.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>CLEAR_CMD
+: <a class="el" href="project__defines_8h.html#a208b4b1817a63684b1c8de7085aa604c">project_defines.h</a>
+</li>
+<li>computerMoves
+: <a class="el" href="laby__game_8c.html#a367d32a14484e26e65926f2417ba87bd">laby_game.c</a>
+</li>
+<li>Continue
+: <a class="el" href="laby__game_8c.html#afea2ae79479f98a6600efb0ecf474bd4">laby_game.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EMPTY_SYMBOL
+: <a class="el" href="graphics_8h.html#ac215a1e069ad8fe687a0dd8d24b62c23">graphics.h</a>
+</li>
+<li>ENEMY_BASIC_SYMBOL
+: <a class="el" href="graphics_8h.html#af7136f14f69aed74a3c676248352e5ec">graphics.h</a>
+</li>
+<li>ENEMY_FAST_SYMBOL
+: <a class="el" href="graphics_8h.html#a3452187109dfce5e6efc476fb2d17682">graphics.h</a>
+</li>
+<li>ENEMY_GHOST_SYMBOL
+: <a class="el" href="graphics_8h.html#aea00d7243b366376587597f7eb1a6dbe">graphics.h</a>
+</li>
+<li>ENTITY_HAS_MOVED_FLAG
+: <a class="el" href="laby__game_8h.html#ab730f3dbe0cfb965861d4b520465675b">laby_game.h</a>
+</li>
+<li>ERROR_HERO_DEAD
+: <a class="el" href="gameplay_8h.html#a3ed5e28c14dd01e625ba4219a7adcdb3">gameplay.h</a>
+</li>
+<li>ERROR_INVALID_BEHAVIOR
+: <a class="el" href="project__defines_8h.html#a5bf7e3dc16548892cd8d6f3bbfaee50e">project_defines.h</a>
+</li>
+<li>ERROR_INVALID_DEST
+: <a class="el" href="gameplay_8h.html#acd032f08d79647e7122e8e660e42c69e">gameplay.h</a>
+</li>
+<li>ERROR_INVALID_PARAM
+: <a class="el" href="project__defines_8h.html#a46991f9bc9447e7029136ea73ce8d373">project_defines.h</a>
+</li>
+<li>ERROR_INVALID_SOURCE
+: <a class="el" href="gameplay_8h.html#a692991ee0c53b0cb52a9d360ec8142fd">gameplay.h</a>
+</li>
+<li>ERROR_MALLOC
+: <a class="el" href="project__defines_8h.html#a1d14efe4782914b2a1825af2608490f9">project_defines.h</a>
+</li>
+<li>ERROR_PARAM_NULL
+: <a class="el" href="project__defines_8h.html#a63aa0a193ddf7ffebae1414660136cd6">project_defines.h</a>
+</li>
+<li>ERROR_TRAP_DEAD
+: <a class="el" href="gameplay_8h.html#aa0854eb648ce8489e68d94d43082ad7d">gameplay.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>FFLUSH
+: <a class="el" href="project__defines_8h.html#aabdff1b8986ceb2e945ae328979468bf">project_defines.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getline()
+: <a class="el" href="getline_8h.html#aaf07c1bbc2aa081a54bdd66f0e152312">getline.h</a>
+</li>
+<li>graphics_labyrinthe_draw()
+: <a class="el" href="graphics_8c.html#afa7a1e853d2f00f938e90bac61b5b05e">graphics.c</a>
+, <a class="el" href="graphics_8h.html#afa7a1e853d2f00f938e90bac61b5b05e">graphics.h</a>
+</li>
+<li>graphics_labyrinthe_translate()
+: <a class="el" href="graphics_8c.html#a9c384fa5845f1b6b3be5f9d802be0f8c">graphics.c</a>
+, <a class="el" href="graphics_8h.html#a9c384fa5845f1b6b3be5f9d802be0f8c">graphics.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HERO_SYMBOL
+: <a class="el" href="graphics_8h.html#a0ad0e5df5ab846e9cc06ac4eeab0d86d">graphics.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>INPUT_DOWN
+: <a class="el" href="gameplay_8h.html#aa73027fe01d1d088be8b6c5ace5ec71c">gameplay.h</a>
+</li>
+<li>INPUT_LEFT
+: <a class="el" href="gameplay_8h.html#a6babbcbdbd3de53d7ae8d28a7ad25d90">gameplay.h</a>
+</li>
+<li>INPUT_NONE
+: <a class="el" href="gameplay_8h.html#a2415dbc707abe01ed8d1b9925681d65c">gameplay.h</a>
+</li>
+<li>INPUT_QUIT
+: <a class="el" href="gameplay_8h.html#ad0b849bca0f25fa9659f7b47a5d59d56">gameplay.h</a>
+</li>
+<li>INPUT_RIGHT
+: <a class="el" href="gameplay_8h.html#a26a2c216e031dd01c2de2a7baeab71b7">gameplay.h</a>
+</li>
+<li>INPUT_SELECT
+: <a class="el" href="gameplay_8h.html#a00fbb25c2f10dd3c9334cb8cf588f07c">gameplay.h</a>
+</li>
+<li>INPUT_UP
+: <a class="el" href="gameplay_8h.html#a553c4d6bda310446f3577a3d6348d6b1">gameplay.h</a>
+</li>
+<li>ITEM_AVG_SYMBOL
+: <a class="el" href="graphics_8h.html#a6a0a617d9ecbb661ad5b2af33b2724bb">graphics.h</a>
+</li>
+<li>ITEM_BIG_SYMBOL
+: <a class="el" href="graphics_8h.html#a58a84abb70464020c58c2080a3db0da0">graphics.h</a>
+</li>
+<li>ITEM_LITTLE_SYMBOL
+: <a class="el" href="graphics_8h.html#ad4b22f3a549dca2afd14a9a0a604d2e1">graphics.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>lab
+: <a class="el" href="laby__game_8c.html#a25906a99ac156db2a45fb02be50f480b">laby_game.c</a>
+</li>
+<li>Laby_Cell_str_t
+: <a class="el" href="labyrinthe_8h.html#a82736ab0a9cebda7089540f9e7d9564e">labyrinthe.h</a>
+</li>
+<li>LABY_EMPTY
+: <a class="el" href="labyrinthe_8h.html#a7040aafffdec4ece2c4d64d6e9a1afec">labyrinthe.h</a>
+</li>
+<li>LABY_EMPTY_TYPE_ENTRANCE
+: <a class="el" href="labyrinthe_8h.html#aa1d8a167e47d56b098bbb9cbb96f68d1">labyrinthe.h</a>
+</li>
+<li>LABY_EMPTY_TYPE_EXIT
+: <a class="el" href="labyrinthe_8h.html#a1379f41f6c3db34ed5e8185f5ea90123">labyrinthe.h</a>
+</li>
+<li>LABY_ENEMY
+: <a class="el" href="labyrinthe_8h.html#a0e5472b80e21a4d72f83b2d78e54c0df">labyrinthe.h</a>
+</li>
+<li>LABY_ENEMY_TYPE_BASIC
+: <a class="el" href="labyrinthe_8h.html#ac956013719cf938f7827ee809cdb7eb0">labyrinthe.h</a>
+</li>
+<li>LABY_ENEMY_TYPE_GHOST
+: <a class="el" href="labyrinthe_8h.html#ab5717345aea06e2630c7d218855da882">labyrinthe.h</a>
+</li>
+<li>laby_game_check_if_player_dead()
+: <a class="el" href="laby__game_8c.html#afd5521d2ad5f69e53580fbb9cfb192f2">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#afd5521d2ad5f69e53580fbb9cfb192f2">laby_game.h</a>
+</li>
+<li>laby_game_check_victory()
+: <a class="el" href="laby__game_8c.html#a626d1a95ec0919111ec10ae9ed9f4de0">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#a7563854b86a59db03da0b9180647effd">laby_game.h</a>
+</li>
+<li>laby_game_cycle()
+: <a class="el" href="laby__game_8c.html#a8f01d7717e82dcd1a006aadf515bc5e2">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#a9a2c88267f39f8809b99700f888a9720">laby_game.h</a>
+</li>
+<li>laby_game_end()
+: <a class="el" href="laby__game_8c.html#adfa8872467893cc5b90392212e98bcad">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#adfa8872467893cc5b90392212e98bcad">laby_game.h</a>
+</li>
+<li>laby_game_enemies_move()
+: <a class="el" href="laby__game_8c.html#ae8e5f14b6f68e3e975e3302f85597670">laby_game.c</a>
+</li>
+<li>laby_game_graphics_draw()
+: <a class="el" href="laby__game_8c.html#a6645dab946fc12f63cefa299406e834b">laby_game.c</a>
+</li>
+<li>laby_game_init()
+: <a class="el" href="laby__game_8c.html#afb743615e4fc41dd9839d7910d67dfae">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#a8bc40a2ba969ae52650a0f64cad5cc29">laby_game.h</a>
+</li>
+<li>laby_game_init_options()
+: <a class="el" href="laby__game_8c.html#a15bb4b3be948b3e2b2b52ec913f4db8d">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#a43cf1bbb8a004d1347c85ca1f5681136">laby_game.h</a>
+</li>
+<li>laby_game_loader_init()
+: <a class="el" href="laby__game_8c.html#a5dcf27ad8883689ccb97e549ad36b9bc">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#a5dcf27ad8883689ccb97e549ad36b9bc">laby_game.h</a>
+</li>
+<li>laby_game_menu_handler()
+: <a class="el" href="laby__game_8c.html#ae87b5883324b961eb3dd9261b354b0a4">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#ae87b5883324b961eb3dd9261b354b0a4">laby_game.h</a>
+</li>
+<li>laby_game_menu_init()
+: <a class="el" href="laby__game_8c.html#a91040ac5235a2ead6c51f28c4fd6de18">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#a91040ac5235a2ead6c51f28c4fd6de18">laby_game.h</a>
+</li>
+<li>laby_game_player_check_death()
+: <a class="el" href="laby__game_8c.html#aa38b62b4825facaeb4a9901b6182193c">laby_game.c</a>
+</li>
+<li>laby_game_player_move()
+: <a class="el" href="laby__game_8c.html#a3301e05a6d96749fe61475a5cff9c501">laby_game.c</a>
+, <a class="el" href="laby__game_8h.html#ab99f8d1b0fb6d6ae6079657ffd898827">laby_game.h</a>
+</li>
+<li>laby_game_print_score()
+: <a class="el" href="laby__game_8c.html#a13da3c052ffa242147f30a2da4413132">laby_game.c</a>
+</li>
+<li>laby_game_scoring_handling()
+: <a class="el" href="laby__game_8c.html#a3f98370460e68ecdcd1046511902ac95">laby_game.c</a>
+</li>
+<li>laby_gameplay_calculate_score()
+: <a class="el" href="gameplay_8c.html#a6b67e07de23004352fb18dc4b94c4d71">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a6b67e07de23004352fb18dc4b94c4d71">gameplay.h</a>
+</li>
+<li>laby_gameplay_get_moves()
+: <a class="el" href="gameplay_8c.html#a020ae71731d1b4ccee65cc61fe9fdcc1">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a020ae71731d1b4ccee65cc61fe9fdcc1">gameplay.h</a>
+</li>
+<li>laby_gameplay_get_score()
+: <a class="el" href="gameplay_8c.html#ac109d4e65da6bb6e34eef4fc93c6ed7d">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#ac109d4e65da6bb6e34eef4fc93c6ed7d">gameplay.h</a>
+</li>
+<li>laby_gameplay_init()
+: <a class="el" href="gameplay_8c.html#a1738e9f4654500206c94951ebd43e26b">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a1738e9f4654500206c94951ebd43e26b">gameplay.h</a>
+</li>
+<li>laby_gameplay_move()
+: <a class="el" href="gameplay_8c.html#af1450dd5ad4d1a3f55ce2407620022f3">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#af1450dd5ad4d1a3f55ce2407620022f3">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_basic_enemy()
+: <a class="el" href="gameplay_8c.html#ab5c9589e730947c8915436e3dd2aefd6">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#ab5c9589e730947c8915436e3dd2aefd6">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_down()
+: <a class="el" href="gameplay_8c.html#a1d4d5a96e2b75e871198a5eeb438e981">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a1d4d5a96e2b75e871198a5eeb438e981">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_ghost()
+: <a class="el" href="gameplay_8c.html#a72cfd78fb30fec04b859711f327611fe">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a72cfd78fb30fec04b859711f327611fe">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_hero()
+: <a class="el" href="gameplay_8c.html#abf34abb082272357b82861c3661684d8">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#abf34abb082272357b82861c3661684d8">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_left()
+: <a class="el" href="gameplay_8c.html#a4a982c48ba9299fa01c4b17bdd92188d">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a4a982c48ba9299fa01c4b17bdd92188d">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_right()
+: <a class="el" href="gameplay_8c.html#a52443170a01d4b405ed02a7c477af305">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#a52443170a01d4b405ed02a7c477af305">gameplay.h</a>
+</li>
+<li>laby_gameplay_move_up()
+: <a class="el" href="gameplay_8c.html#ac3bc9b8ab1cbeae7259f523e91a3d227">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#ac3bc9b8ab1cbeae7259f523e91a3d227">gameplay.h</a>
+</li>
+<li>laby_gameplay_player_input()
+: <a class="el" href="gameplay_8c.html#aac4be0426f0eff0b561646bf33ad3141">gameplay.c</a>
+, <a class="el" href="gameplay_8h.html#aac4be0426f0eff0b561646bf33ad3141">gameplay.h</a>
+</li>
+<li>LABY_GEN_ALL_VISITED
+: <a class="el" href="labyrinthe_8h.html#a67dbafcd5b2a22452175bd08372d1d61">labyrinthe.h</a>
+</li>
+<li>LABY_GEN_REALLOC_LIMIT
+: <a class="el" href="labyrinthe_8h.html#a6d8aee36eaae8f5495324fc78104990f">labyrinthe.h</a>
+</li>
+<li>LABY_GEN_REALLOC_SIZE
+: <a class="el" href="labyrinthe_8h.html#aadbe6404d4628529cd617e80b88359d9">labyrinthe.h</a>
+</li>
+<li>LABY_GEN_VISITED_E
+: <a class="el" href="labyrinthe_8h.html#a899cf38cead1964da67f72eb1a613564">labyrinthe.h</a>
+</li>
+<li>LABY_GEN_VISITED_N
+: <a class="el" href="labyrinthe_8h.html#a63f02595af32f103a98d47a40453c84e">labyrinthe.h</a>
+</li>
+<li>LABY_GEN_VISITED_S
+: <a class="el" href="labyrinthe_8h.html#a2f63bf71c907e56196534f7fbbc30d15">labyrinthe.h</a>
+</li>
+<li>LABY_GEN_VISITED_W
+: <a class="el" href="labyrinthe_8h.html#a3c5645e3cf78f3e1011a07b8558634f3">labyrinthe.h</a>
+</li>
+<li>LABY_HERO
+: <a class="el" href="labyrinthe_8h.html#a23294b9907bccab85c6cc632fd8ae4e0">labyrinthe.h</a>
+</li>
+<li>LABY_ITEMS
+: <a class="el" href="labyrinthe_8h.html#a84f9ebbac3ab864abef83cff63af59c8">labyrinthe.h</a>
+</li>
+<li>LABY_ITEMS_TYPE_AVERAGE_TREASURE
+: <a class="el" href="labyrinthe_8h.html#afd2935523280d213a006b3ddba55ae0c">labyrinthe.h</a>
+</li>
+<li>LABY_ITEMS_TYPE_BIG_TREASURE
+: <a class="el" href="labyrinthe_8h.html#aca0331706230e19ae10ec84f1ce54916">labyrinthe.h</a>
+</li>
+<li>LABY_ITEMS_TYPE_LITTLE_TREASURE
+: <a class="el" href="labyrinthe_8h.html#a53ccb9ba928499b45965bf29e048e908">labyrinthe.h</a>
+</li>
+<li>LABY_PERCENT_PROBABILITY_OF_ENTITY
+: <a class="el" href="labyrinthe_8h.html#ad82a27f7b19c5fbed859c0a620300076">labyrinthe.h</a>
+</li>
+<li>laby_swap_cells_properties()
+: <a class="el" href="labyrinthe_8c.html#af8778cd9da0908cb34bae721a2200acb">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#af8778cd9da0908cb34bae721a2200acb">labyrinthe.h</a>
+</li>
+<li>LABY_TRAPS
+: <a class="el" href="labyrinthe_8h.html#a58373484ec9509bf0c6d51e3e8381744">labyrinthe.h</a>
+</li>
+<li>LABY_UNINITIALIZED
+: <a class="el" href="labyrinthe_8h.html#af043d71b99734527d6b38ad751bdfeea">labyrinthe.h</a>
+</li>
+<li>LABY_WALL
+: <a class="el" href="labyrinthe_8h.html#a7970b5ad431f74fba8521a5a12e67d2d">labyrinthe.h</a>
+</li>
+<li>LABY_WALL_TYPE_BASIC
+: <a class="el" href="labyrinthe_8h.html#a146a69ea5a79f8b73db7e99eccaa8cd8">labyrinthe.h</a>
+</li>
+<li>LABY_WALL_TYPE_SOLID
+: <a class="el" href="labyrinthe_8h.html#a6c0e03774f2be694353d29b5ac9aa012">labyrinthe.h</a>
+</li>
+<li>Labyrinthe
+: <a class="el" href="labyrinthe_8h.html#a635e69b4b8a1e09ca9a01d30559ebec7">labyrinthe.h</a>
+</li>
+<li>labyrinthe_alloc()
+: <a class="el" href="labyrinthe_8c.html#a135c723a5811ad30fd17c09e92fce63a">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#a135c723a5811ad30fd17c09e92fce63a">labyrinthe.h</a>
+</li>
+<li>labyrinthe_build_entities()
+: <a class="el" href="labyrinthe_8c.html#af31048c6392c48aa2b8fdc901f70362e">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#aac177994ca4921b20bbaab61d033509c">labyrinthe.h</a>
+</li>
+<li>labyrinthe_build_walls()
+: <a class="el" href="labyrinthe_8c.html#ade1ff948ab7682c54fda3710281a7092">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#ade1ff948ab7682c54fda3710281a7092">labyrinthe.h</a>
+</li>
+<li>labyrinthe_free()
+: <a class="el" href="labyrinthe_8c.html#adef95afa6763b393ca4bccbf8c2df69b">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#adef95afa6763b393ca4bccbf8c2df69b">labyrinthe.h</a>
+</li>
+<li>labyrinthe_generate()
+: <a class="el" href="labyrinthe_8c.html#a9c76a800094b1f36452310e6253a022c">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#a9c76a800094b1f36452310e6253a022c">labyrinthe.h</a>
+</li>
+<li>labyrinthe_init()
+: <a class="el" href="labyrinthe_8c.html#a86e89ccff6ea4a6cc95478652f228782">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#a86e89ccff6ea4a6cc95478652f228782">labyrinthe.h</a>
+</li>
+<li>labyrinthe_resolve()
+: <a class="el" href="labyrinthe_8c.html#a09b2603c97d215d144844e4a863fb70c">labyrinthe.c</a>
+, <a class="el" href="labyrinthe_8h.html#a09b2603c97d215d144844e4a863fb70c">labyrinthe.h</a>
+</li>
+<li>loadedLabyName
+: <a class="el" href="laby__game_8c.html#a43800d03f5b68e26143d30f275af2c2c">laby_game.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>MAGIC_BYTE
+: <a class="el" href="serialization_8h.html#a3455653da0de1178f9b079fb7d6626be">serialization.h</a>
+</li>
+<li>main()
+: <a class="el" href="main_8c.html#ac0f2228420376f4db7e1274f2b41667c">main.c</a>
+</li>
+<li>matrice_alloc()
+: <a class="el" href="matrice_8c.html#a22dcf5d80ff44c57fc6712a358ed802b">matrice.c</a>
+, <a class="el" href="matrice_8h.html#a159c5688fadbb27295e3c490e17416ff">matrice.h</a>
+</li>
+<li>matrice_free()
+: <a class="el" href="matrice_8c.html#a4395b892a678a7d54c513a4763ce1b08">matrice.c</a>
+, <a class="el" href="matrice_8h.html#ad3bdf0dfed9981fbce27f5a9441eb70a">matrice.h</a>
+</li>
+<li>matrice_init()
+: <a class="el" href="matrice_8c.html#add27ef17b17975104a759b186649b5ad">matrice.c</a>
+, <a class="el" href="matrice_8h.html#ac09c4d5630ead2bebd2ab6f6046a9350">matrice.h</a>
+</li>
+<li>matrice_load_from_file()
+: <a class="el" href="matrice_8c.html#ac38cbb30638463c824c8470181e60b78">matrice.c</a>
+, <a class="el" href="matrice_8h.html#a50a2a678cb66656f39ecbc7eb496144c">matrice.h</a>
+</li>
+<li>matrice_print()
+: <a class="el" href="matrice_8c.html#a2b37ad91b2fb5ea8b262aef7380c7cd8">matrice.c</a>
+, <a class="el" href="matrice_8h.html#a1584c39be647209275996931731df151">matrice.h</a>
+</li>
+<li>matrice_save()
+: <a class="el" href="matrice_8c.html#aead0d4caefaa6ea0b754ac3cd6c724f6">matrice.c</a>
+, <a class="el" href="matrice_8h.html#afd0cea5262a509a2e0eaa20d51cd34e0">matrice.h</a>
+</li>
+<li>matrice_save_into_file()
+: <a class="el" href="matrice_8c.html#ad64939e8a126ea0e3ea4a53380c72ccd">matrice.c</a>
+, <a class="el" href="matrice_8h.html#a0d3f5519aa95c58cf064ce2f2aa27b04">matrice.h</a>
+</li>
+<li>MENU_CHARGER
+: <a class="el" href="laby__game_8h.html#a4c10fbc2bf0476fd39a0a537bb93a287">laby_game.h</a>
+</li>
+<li>MENU_CHARGER_INDEX
+: <a class="el" href="laby__game_8h.html#a264f46a66f251000762c3e55d97e8e11">laby_game.h</a>
+</li>
+<li>MENU_CHARGER_SELECT
+: <a class="el" href="laby__game_8h.html#a0ccf0b0dd022020a5c69d7a4a9e07846">laby_game.h</a>
+</li>
+<li>MENU_CREER
+: <a class="el" href="laby__game_8h.html#adba5706b5b08ccebd25b480dc3682c8e">laby_game.h</a>
+</li>
+<li>MENU_CREER_INDEX
+: <a class="el" href="laby__game_8h.html#afa51aa92993d3dcab33529d68dec26a7">laby_game.h</a>
+</li>
+<li>MENU_CREER_SELECT
+: <a class="el" href="laby__game_8h.html#a18b7c6797e9d064fabfb5981fe2ac3db">laby_game.h</a>
+</li>
+<li>MENU_ENTRIES
+: <a class="el" href="laby__game_8h.html#add7471074b7cff260e82c07257cf2637">laby_game.h</a>
+</li>
+<li>MENU_JOUER
+: <a class="el" href="laby__game_8h.html#af0be74ef65ba1459e0148131cc590fe5">laby_game.h</a>
+</li>
+<li>MENU_JOUER_INDEX
+: <a class="el" href="laby__game_8h.html#a11e811fe71c3e4f6bb1c789f9f1cfc07">laby_game.h</a>
+</li>
+<li>MENU_JOUER_SELECT
+: <a class="el" href="laby__game_8h.html#a8df0a38b71a77f8fd3d470ba1a8e3704">laby_game.h</a>
+</li>
+<li>MENU_QUITTER
+: <a class="el" href="laby__game_8h.html#aed5666aff5c9bc81857359cd2a7fd983">laby_game.h</a>
+</li>
+<li>MENU_QUITTER_INDEX
+: <a class="el" href="laby__game_8h.html#a8cfa00f950e8f3a0e47f31b1d223471b">laby_game.h</a>
+</li>
+<li>MENU_QUITTER_SELECT
+: <a class="el" href="laby__game_8h.html#a87c70f512a81ebb75c3a84f05c551c73">laby_game.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>NbMoves
+: <a class="el" href="gameplay_8c.html#acdad3d19ebf244871cb1db51a0666c9a">gameplay.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>PAUSE_CMD
+: <a class="el" href="project__defines_8h.html#a81b0157fc53f521b90a3885552969fdc">project_defines.h</a>
+</li>
+<li>PlayerCell
+: <a class="el" href="laby__game_8c.html#ad20072d8d29a8cd9b82728e5a6d70758">laby_game.c</a>
+</li>
+<li>print_info()
+: <a class="el" href="labyrinthe_8c.html#abd303261cf311bfb73da3006d0c22048">labyrinthe.c</a>
+</li>
+<li>PRINTDF
+: <a class="el" href="project__defines_8h.html#ac2f0bff4960a62644276f5c19c6952f7">project_defines.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>RANDOM
+: <a class="el" href="project__defines_8h.html#a372b645e100534646a5fcbfae9fbd02d">project_defines.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>Score
+: <a class="el" href="gameplay_8c.html#a51ffa3e2f9551426c4077d8035a46f3f">gameplay.c</a>
+</li>
+<li>SCORE_FOR_EACH_MOVE_BETTER_THAN_COMP
+: <a class="el" href="gameplay_8h.html#a5cdd2aca7c4e242eef51beaa4d6b28d8">gameplay.h</a>
+</li>
+<li>SCORE_FOR_EACH_MOVE_WORST_THAN_COMP
+: <a class="el" href="gameplay_8h.html#ad180703a5405585310b811abad0ac420">gameplay.h</a>
+</li>
+<li>score_manage()
+: <a class="el" href="serialization_8c.html#a84d3cd07f4bcbe45e4dadffae34fa723">serialization.c</a>
+, <a class="el" href="serialization_8h.html#a84d3cd07f4bcbe45e4dadffae34fa723">serialization.h</a>
+</li>
+<li>serialize_buffer_to_labyrinthe()
+: <a class="el" href="serialization_8c.html#ab6af58142f2ae4cde3927946a6c2636a">serialization.c</a>
+, <a class="el" href="serialization_8h.html#a8897622b96d9fc77d1597ed96f52ec90">serialization.h</a>
+</li>
+<li>serialize_cell()
+: <a class="el" href="serialization_8c.html#af5e046ccb8922f6fe7a22de1a2712ff2">serialization.c</a>
+, <a class="el" href="serialization_8h.html#af5e046ccb8922f6fe7a22de1a2712ff2">serialization.h</a>
+</li>
+<li>serialize_labyrinthe_to_buffer()
+: <a class="el" href="serialization_8c.html#a08b508913be98637331aea21dba2ac5d">serialization.c</a>
+, <a class="el" href="serialization_8h.html#aca841d3b96f2eb80d7f6f8412bc99ba2">serialization.h</a>
+</li>
+<li>sint16_t
+: <a class="el" href="project__defines_8h.html#a8b7579a6aaba6d7fa221becce63e85cd">project_defines.h</a>
+</li>
+<li>sint32_t
+: <a class="el" href="project__defines_8h.html#ad838970452fe561cb8e0550cac5336be">project_defines.h</a>
+</li>
+<li>sint8_t
+: <a class="el" href="project__defines_8h.html#a54cceacffb6d6dff03bf69f786d431a9">project_defines.h</a>
+</li>
+<li>SUCCESS
+: <a class="el" href="project__defines_8h.html#aa90cac659d18e8ef6294c7ae337f6b58">project_defines.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TRAP_SYMBOL
+: <a class="el" href="graphics_8h.html#a0e1795f49dc1868908d19eaa1fea9b6c">graphics.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>uint16_t
+: <a class="el" href="project__defines_8h.html#a273cf69d639a59973b6019625df33e30">project_defines.h</a>
+</li>
+<li>uint32_t
+: <a class="el" href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">project_defines.h</a>
+</li>
+<li>uint8_t
+: <a class="el" href="project__defines_8h.html#aba7bc1797add20fe3efdf37ced1182c5">project_defines.h</a>
+</li>
+<li>UNINITIALIZED_SYMBOL
+: <a class="el" href="graphics_8h.html#ab12c4f1ef23f7be9106aedaae57c22c9">graphics.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>WALL_BASIC_EW_SYMBOL
+: <a class="el" href="graphics_8h.html#ac4ea7d687880a97d232bdd8c88adff48">graphics.h</a>
+</li>
+<li>WALL_BASIC_NS_SYMBOL
+: <a class="el" href="graphics_8h.html#a83f25128e041d3fcb35ac14fed65ce01">graphics.h</a>
+</li>
+<li>WALL_BASIC_NSEW_SYMBOL
+: <a class="el" href="graphics_8h.html#a0510b451166897ad90999ba5e3ed5da8">graphics.h</a>
+</li>
+<li>WALL_BASIC_SYMBOL
+: <a class="el" href="graphics_8h.html#a06f02baf9382be665b0c4ae9defa1d03">graphics.h</a>
+</li>
+<li>WALL_SOLID_SYMBOL
+: <a class="el" href="graphics_8h.html#ab7ea9ee9ae886c01e321435602590434">graphics.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré le Dimanche 16 Novembre 2014 16:23:37 pour Labyrinthe par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

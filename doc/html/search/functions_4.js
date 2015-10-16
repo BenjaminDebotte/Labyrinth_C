@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['score_5fmanage',['score_manage',['../serialization_8c.html#a84d3cd07f4bcbe45e4dadffae34fa723',1,'score_manage(char *scoreFileName, Player_Score_str_t Scoring_data):&#160;serialization.c'],['../serialization_8h.html#a84d3cd07f4bcbe45e4dadffae34fa723',1,'score_manage(char *scoreFileName, Player_Score_str_t Scoring_data):&#160;serialization.c']]],
+  ['serialize_5fbuffer_5fto_5flabyrinthe',['serialize_buffer_to_labyrinthe',['../serialization_8c.html#ab6af58142f2ae4cde3927946a6c2636a',1,'serialize_buffer_to_labyrinthe(BUFFER *buff):&#160;serialization.c'],['../serialization_8h.html#a8897622b96d9fc77d1597ed96f52ec90',1,'serialize_buffer_to_labyrinthe(BUFFER *):&#160;serialization.c']]],
+  ['serialize_5fcell',['serialize_cell',['../serialization_8c.html#af5e046ccb8922f6fe7a22de1a2712ff2',1,'serialize_cell(BUFFER *dst, const Laby_Cell_str_t *cell):&#160;serialization.c'],['../serialization_8h.html#af5e046ccb8922f6fe7a22de1a2712ff2',1,'serialize_cell(BUFFER *dst, const Laby_Cell_str_t *cell):&#160;serialization.c']]],
+  ['serialize_5flabyrinthe_5fto_5fbuffer',['serialize_labyrinthe_to_buffer',['../serialization_8c.html#a08b508913be98637331aea21dba2ac5d',1,'serialize_labyrinthe_to_buffer(Labyrinthe *lab, size_t *sizeOfBuffer):&#160;serialization.c'],['../serialization_8h.html#aca841d3b96f2eb80d7f6f8412bc99ba2',1,'serialize_labyrinthe_to_buffer(Labyrinthe *l, size_t *s):&#160;serialization.c']]]
+];

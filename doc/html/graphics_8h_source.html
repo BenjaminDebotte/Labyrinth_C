@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Labyrinthe:  Fichier source de graphics.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinthe
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">Projet de langage C - Labyrinthe ENSICAEN 1A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('graphics_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">graphics.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="graphics_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  graphics.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Projet Labyrinthe ENSICAEN 1A</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> Written by Benjamin Debotté</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This program is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> modify it under the terms of the GNU General Public License as</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> published by the Free Software Foundation; either version 2, or (at</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> General Public License for more details.*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef GRAPHICS_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define GRAPHICS_H</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="graphics_8h.html#a83f25128e041d3fcb35ac14fed65ce01">   26</a></span>&#160;<span class="preprocessor">#define WALL_BASIC_NS_SYMBOL &#39;|&#39;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="graphics_8h.html#ac4ea7d687880a97d232bdd8c88adff48">   27</a></span>&#160;<span class="preprocessor">#define WALL_BASIC_EW_SYMBOL &#39;-&#39;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="graphics_8h.html#a0510b451166897ad90999ba5e3ed5da8">   28</a></span>&#160;<span class="preprocessor">#define WALL_BASIC_NSEW_SYMBOL &#39;+&#39;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="graphics_8h.html#a06f02baf9382be665b0c4ae9defa1d03">   30</a></span>&#160;<span class="preprocessor">#define WALL_BASIC_SYMBOL   &#39;+&#39;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="graphics_8h.html#ab7ea9ee9ae886c01e321435602590434">   31</a></span>&#160;<span class="preprocessor">#define WALL_SOLID_SYMBOL   &#39;#&#39;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="graphics_8h.html#a0ad0e5df5ab846e9cc06ac4eeab0d86d">   32</a></span>&#160;<span class="preprocessor">#define HERO_SYMBOL         &#39;@&#39;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="graphics_8h.html#ac215a1e069ad8fe687a0dd8d24b62c23">   33</a></span>&#160;<span class="preprocessor">#define EMPTY_SYMBOL        &#39; &#39;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="graphics_8h.html#a0e1795f49dc1868908d19eaa1fea9b6c">   35</a></span>&#160;<span class="preprocessor">#define TRAP_SYMBOL         &#39;t&#39;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="graphics_8h.html#af7136f14f69aed74a3c676248352e5ec">   36</a></span>&#160;<span class="preprocessor">#define ENEMY_BASIC_SYMBOL     &#39;!&#39;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="graphics_8h.html#a3452187109dfce5e6efc476fb2d17682">   37</a></span>&#160;<span class="preprocessor">#define ENEMY_FAST_SYMBOL      &#39;!&#39;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="graphics_8h.html#aea00d7243b366376587597f7eb1a6dbe">   38</a></span>&#160;<span class="preprocessor">#define ENEMY_GHOST_SYMBOL      &#39;g&#39;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="graphics_8h.html#ad4b22f3a549dca2afd14a9a0a604d2e1">   41</a></span>&#160;<span class="preprocessor">#define ITEM_LITTLE_SYMBOL      &#39;*&#39;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="graphics_8h.html#a6a0a617d9ecbb661ad5b2af33b2724bb">   42</a></span>&#160;<span class="preprocessor">#define ITEM_AVG_SYMBOL         &#39;$&#39;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="graphics_8h.html#a58a84abb70464020c58c2080a3db0da0">   43</a></span>&#160;<span class="preprocessor">#define ITEM_BIG_SYMBOL         &#39;$&#39;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="graphics_8h.html#ab12c4f1ef23f7be9106aedaae57c22c9">   45</a></span>&#160;<span class="preprocessor">#define UNINITIALIZED_SYMBOL &#39;?&#39;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="labyrinthe_8h.html">labyrinthe.h</a>&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="graphics_8h.html#afa7a1e853d2f00f938e90bac61b5b05e">graphics_labyrinthe_draw</a>(<a class="code" href="struct_matrice.html">Labyrinthe</a> *<a class="code" href="laby__game_8c.html#a25906a99ac156db2a45fb02be50f480b">lab</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">char</span> <a class="code" href="graphics_8h.html#a9c384fa5845f1b6b3be5f9d802be0f8c">graphics_labyrinthe_translate</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> c);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="ttc" id="struct_laby___cell__str_html"><div class="ttname"><a href="struct_laby___cell__str.html">Laby_Cell_str</a></div><div class="ttdoc">Structure représentative d&#39;une cellule, pointant vers les cellules adjacentes et disposant d&#39;informat...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinthe_8h_source.html#l00098">labyrinthe.h:98</a></div></div>
+<div class="ttc" id="laby__game_8c_html_a25906a99ac156db2a45fb02be50f480b"><div class="ttname"><a href="laby__game_8c.html#a25906a99ac156db2a45fb02be50f480b">lab</a></div><div class="ttdeci">Labyrinthe lab</div><div class="ttdef"><b>Definition:</b> <a href="laby__game_8c_source.html#l00033">laby_game.c:33</a></div></div>
+<div class="ttc" id="labyrinthe_8h_html"><div class="ttname"><a href="labyrinthe_8h.html">labyrinthe.h</a></div><div class="ttdoc">Fichier destiné à gérer l&#39;ensemble des opérations nécessaires à la gestion en mémoire du labyrinthe...</div></div>
+<div class="ttc" id="graphics_8h_html_afa7a1e853d2f00f938e90bac61b5b05e"><div class="ttname"><a href="graphics_8h.html#afa7a1e853d2f00f938e90bac61b5b05e">graphics_labyrinthe_draw</a></div><div class="ttdeci">void graphics_labyrinthe_draw(Labyrinthe *lab)</div><div class="ttdoc">Dessine le labyrinthe via la table de conversion des symboles graphiques. </div><div class="ttdef"><b>Definition:</b> <a href="graphics_8c_source.html#l00022">graphics.c:22</a></div></div>
+<div class="ttc" id="graphics_8h_html_a9c384fa5845f1b6b3be5f9d802be0f8c"><div class="ttname"><a href="graphics_8h.html#a9c384fa5845f1b6b3be5f9d802be0f8c">graphics_labyrinthe_translate</a></div><div class="ttdeci">char graphics_labyrinthe_translate(Laby_Cell_str_t c)</div><div class="ttdoc">Sous-fonction réalisant la conversion d&#39;une cellule vers un symbole graphique ASCII. </div><div class="ttdef"><b>Definition:</b> <a href="graphics_8c_source.html#l00048">graphics.c:48</a></div></div>
+<div class="ttc" id="struct_matrice_html"><div class="ttname"><a href="struct_matrice.html">Matrice</a></div><div class="ttdoc">Structure représentative d&#39;une Matrice de données, avec son compte de lignes et de colonnes...</div><div class="ttdef"><b>Definition:</b> <a href="matrice_8h_source.html#l00036">matrice.h:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="graphics_8h.html">graphics.h</a></li>
+    <li class="footer">Généré le Dimanche 16 Novembre 2014 16:23:37 pour Labyrinthe par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

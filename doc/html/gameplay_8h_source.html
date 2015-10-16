@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Labyrinthe:  Fichier source de gameplay.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinthe
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">Projet de langage C - Labyrinthe ENSICAEN 1A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('gameplay_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">gameplay.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gameplay_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  gameplay.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Projet Labyrinthe ENSICAEN 1A</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> Written by Benjamin Debotté</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This program is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> modify it under the terms of the GNU General Public License as</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> published by the Free Software Foundation; either version 2, or (at</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> your option) any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> This program is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef GAMEPLAY_H</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define GAMEPLAY_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="labyrinthe_8h.html">labyrinthe.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a2415dbc707abe01ed8d1b9925681d65c">   29</a></span>&#160;<span class="preprocessor">#define INPUT_NONE &#39;\0&#39;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a553c4d6bda310446f3577a3d6348d6b1">   30</a></span>&#160;<span class="preprocessor">#define INPUT_UP  &#39;z&#39;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="gameplay_8h.html#aa73027fe01d1d088be8b6c5ace5ec71c">   31</a></span>&#160;<span class="preprocessor">#define INPUT_DOWN &#39;s&#39;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a6babbcbdbd3de53d7ae8d28a7ad25d90">   32</a></span>&#160;<span class="preprocessor">#define INPUT_LEFT &#39;q&#39;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a26a2c216e031dd01c2de2a7baeab71b7">   33</a></span>&#160;<span class="preprocessor">#define INPUT_RIGHT &#39;d&#39;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a00fbb25c2f10dd3c9334cb8cf588f07c">   34</a></span>&#160;<span class="preprocessor">#define INPUT_SELECT &#39;e&#39;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="gameplay_8h.html#ad0b849bca0f25fa9659f7b47a5d59d56">   35</a></span>&#160;<span class="preprocessor">#define INPUT_QUIT &#39;x&#39;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a692991ee0c53b0cb52a9d360ec8142fd">   38</a></span>&#160;<span class="preprocessor">#define ERROR_INVALID_SOURCE            0x1000</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="gameplay_8h.html#acd032f08d79647e7122e8e660e42c69e">   39</a></span>&#160;<span class="preprocessor">#define ERROR_INVALID_DEST              0x1001</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a3ed5e28c14dd01e625ba4219a7adcdb3">   40</a></span>&#160;<span class="preprocessor">#define ERROR_HERO_DEAD                0x1002</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="gameplay_8h.html#aa0854eb648ce8489e68d94d43082ad7d">   41</a></span>&#160;<span class="preprocessor">#define ERROR_TRAP_DEAD                 0x1003</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="gameplay_8h.html#a5cdd2aca7c4e242eef51beaa4d6b28d8">   45</a></span>&#160;<span class="preprocessor">#define SCORE_FOR_EACH_MOVE_BETTER_THAN_COMP    100</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="gameplay_8h.html#ad180703a5405585310b811abad0ac420">   46</a></span>&#160;<span class="preprocessor">#define SCORE_FOR_EACH_MOVE_WORST_THAN_COMP     20 </span><span class="comment">/* Ce score sera soustrait au score total*/</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_player___score__str__t.html">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_player___score__str__t.html#a84e88594391e0093649ba307b7485635">   54</a></span>&#160;    <span class="keywordtype">char</span> player[21]; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_player___score__str__t.html#abe902382ebcf927bbba5c0d47bf53138">   55</a></span>&#160;    <a class="code" href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="struct_player___score__str__t.html#abe902382ebcf927bbba5c0d47bf53138">score</a>; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_player___score__str__t.html#a446648f9c91b541125fbdf4525dfc10a">   56</a></span>&#160;    <a class="code" href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="struct_player___score__str__t.html#a446648f9c91b541125fbdf4525dfc10a">nbMoves</a>; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <a class="code" href="struct_player___score__str__t.html">Player_Score_str_t</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#af1450dd5ad4d1a3f55ce2407620022f3">laby_gameplay_move</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src, <a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a>* dst);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#a52443170a01d4b405ed02a7c477af305">laby_gameplay_move_right</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#a4a982c48ba9299fa01c4b17bdd92188d">laby_gameplay_move_left</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#ac3bc9b8ab1cbeae7259f523e91a3d227">laby_gameplay_move_up</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#a1d4d5a96e2b75e871198a5eeb438e981">laby_gameplay_move_down</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#a72cfd78fb30fec04b859711f327611fe">laby_gameplay_move_ghost</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src, <a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a>* dst);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#ab5c9589e730947c8915436e3dd2aefd6">laby_gameplay_move_basic_enemy</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src, <a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a>* dst);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#abf34abb082272357b82861c3661684d8">laby_gameplay_move_hero</a>(<a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a> *src, <a class="code" href="struct_laby___cell__str.html">Laby_Cell_str_t</a>* dst);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gameplay_8h.html#a6b67e07de23004352fb18dc4b94c4d71">laby_gameplay_calculate_score</a>(<a class="code" href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="laby__game_8c.html#a367d32a14484e26e65926f2417ba87bd">computerMoves</a>, <a class="code" href="struct_player___score__str__t.html">Player_Score_str_t</a> *player);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<a class="code" href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="gameplay_8h.html#ac109d4e65da6bb6e34eef4fc93c6ed7d">laby_gameplay_get_score</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<a class="code" href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="gameplay_8h.html#a020ae71731d1b4ccee65cc61fe9fdcc1">laby_gameplay_get_moves</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">char</span> <a class="code" href="gameplay_8h.html#aac4be0426f0eff0b561646bf33ad3141">laby_gameplay_player_input</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gameplay_8h.html#a1738e9f4654500206c94951ebd43e26b">laby_gameplay_init</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="ttc" id="gameplay_8h_html_ac3bc9b8ab1cbeae7259f523e91a3d227"><div class="ttname"><a href="gameplay_8h.html#ac3bc9b8ab1cbeae7259f523e91a3d227">laby_gameplay_move_up</a></div><div class="ttdeci">int laby_gameplay_move_up(Laby_Cell_str_t *src)</div><div class="ttdoc">Fonction permettant de déplacer l&#39;entité présente dans src vers le haut. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00176">gameplay.c:176</a></div></div>
+<div class="ttc" id="gameplay_8h_html_af1450dd5ad4d1a3f55ce2407620022f3"><div class="ttname"><a href="gameplay_8h.html#af1450dd5ad4d1a3f55ce2407620022f3">laby_gameplay_move</a></div><div class="ttdeci">int laby_gameplay_move(Laby_Cell_str_t *src, Laby_Cell_str_t *dst)</div><div class="ttdoc">Fonction gérant le mouvement d&#39;une entité présente dans src vers une cellule dst. ...</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00140">gameplay.c:140</a></div></div>
+<div class="ttc" id="struct_laby___cell__str_html"><div class="ttname"><a href="struct_laby___cell__str.html">Laby_Cell_str</a></div><div class="ttdoc">Structure représentative d&#39;une cellule, pointant vers les cellules adjacentes et disposant d&#39;informat...</div><div class="ttdef"><b>Definition:</b> <a href="labyrinthe_8h_source.html#l00098">labyrinthe.h:98</a></div></div>
+<div class="ttc" id="gameplay_8h_html_ab5c9589e730947c8915436e3dd2aefd6"><div class="ttname"><a href="gameplay_8h.html#ab5c9589e730947c8915436e3dd2aefd6">laby_gameplay_move_basic_enemy</a></div><div class="ttdeci">int laby_gameplay_move_basic_enemy(Laby_Cell_str_t *src, Laby_Cell_str_t *dst)</div><div class="ttdoc">Sous-fonction destinée à gérer le déplacement d&#39;un fantôme. Un ennemi a la particularité de vouloir a...</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00048">gameplay.c:48</a></div></div>
+<div class="ttc" id="gameplay_8h_html_aac4be0426f0eff0b561646bf33ad3141"><div class="ttname"><a href="gameplay_8h.html#aac4be0426f0eff0b561646bf33ad3141">laby_gameplay_player_input</a></div><div class="ttdeci">char laby_gameplay_player_input()</div><div class="ttdoc">Fonction destinée à attendre et recueillir l&#39;entrée de l&#39;utilisateur. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00201">gameplay.c:201</a></div></div>
+<div class="ttc" id="labyrinthe_8h_html"><div class="ttname"><a href="labyrinthe_8h.html">labyrinthe.h</a></div><div class="ttdoc">Fichier destiné à gérer l&#39;ensemble des opérations nécessaires à la gestion en mémoire du labyrinthe...</div></div>
+<div class="ttc" id="gameplay_8h_html_a52443170a01d4b405ed02a7c477af305"><div class="ttname"><a href="gameplay_8h.html#a52443170a01d4b405ed02a7c477af305">laby_gameplay_move_right</a></div><div class="ttdeci">int laby_gameplay_move_right(Laby_Cell_str_t *src)</div><div class="ttdoc">Fonction permettant de déplacer l&#39;entité présente dans src vers la droite. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00169">gameplay.c:169</a></div></div>
+<div class="ttc" id="laby__game_8c_html_a367d32a14484e26e65926f2417ba87bd"><div class="ttname"><a href="laby__game_8c.html#a367d32a14484e26e65926f2417ba87bd">computerMoves</a></div><div class="ttdeci">int computerMoves</div><div class="ttdef"><b>Definition:</b> <a href="laby__game_8c_source.html#l00036">laby_game.c:36</a></div></div>
+<div class="ttc" id="gameplay_8h_html_a4a982c48ba9299fa01c4b17bdd92188d"><div class="ttname"><a href="gameplay_8h.html#a4a982c48ba9299fa01c4b17bdd92188d">laby_gameplay_move_left</a></div><div class="ttdeci">int laby_gameplay_move_left(Laby_Cell_str_t *src)</div><div class="ttdoc">Fonction permettant de déplacer l&#39;entité présente dans src vers la gauche. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00172">gameplay.c:172</a></div></div>
+<div class="ttc" id="gameplay_8h_html_a1738e9f4654500206c94951ebd43e26b"><div class="ttname"><a href="gameplay_8h.html#a1738e9f4654500206c94951ebd43e26b">laby_gameplay_init</a></div><div class="ttdeci">void laby_gameplay_init()</div><div class="ttdoc">Initialise ou réinitialise les mécaniques de gameplay. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00185">gameplay.c:185</a></div></div>
+<div class="ttc" id="struct_player___score__str__t_html"><div class="ttname"><a href="struct_player___score__str__t.html">Player_Score_str_t</a></div><div class="ttdoc">Structure représentant un résultat de score d&#39;un joueur. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8h_source.html#l00053">gameplay.h:53</a></div></div>
+<div class="ttc" id="gameplay_8h_html_a020ae71731d1b4ccee65cc61fe9fdcc1"><div class="ttname"><a href="gameplay_8h.html#a020ae71731d1b4ccee65cc61fe9fdcc1">laby_gameplay_get_moves</a></div><div class="ttdeci">uint32_t laby_gameplay_get_moves(void)</div><div class="ttdoc">Retourne le nombre de mouvements du joueur. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00192">gameplay.c:192</a></div></div>
+<div class="ttc" id="gameplay_8h_html_a1d4d5a96e2b75e871198a5eeb438e981"><div class="ttname"><a href="gameplay_8h.html#a1d4d5a96e2b75e871198a5eeb438e981">laby_gameplay_move_down</a></div><div class="ttdeci">int laby_gameplay_move_down(Laby_Cell_str_t *src)</div><div class="ttdoc">Fonction permettant de déplacer l&#39;entité présente dans src vers le bas. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00180">gameplay.c:180</a></div></div>
+<div class="ttc" id="gameplay_8h_html_abf34abb082272357b82861c3661684d8"><div class="ttname"><a href="gameplay_8h.html#abf34abb082272357b82861c3661684d8">laby_gameplay_move_hero</a></div><div class="ttdeci">int laby_gameplay_move_hero(Laby_Cell_str_t *src, Laby_Cell_str_t *dst)</div><div class="ttdoc">Sous-fonction destinée à gérer le déplacement d&#39;un fantôme. Le héros à la particularité de pouvoir ra...</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00105">gameplay.c:105</a></div></div>
+<div class="ttc" id="struct_player___score__str__t_html_a446648f9c91b541125fbdf4525dfc10a"><div class="ttname"><a href="struct_player___score__str__t.html#a446648f9c91b541125fbdf4525dfc10a">Player_Score_str_t::nbMoves</a></div><div class="ttdeci">uint32_t nbMoves</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8h_source.html#l00056">gameplay.h:56</a></div></div>
+<div class="ttc" id="gameplay_8h_html_a6b67e07de23004352fb18dc4b94c4d71"><div class="ttname"><a href="gameplay_8h.html#a6b67e07de23004352fb18dc4b94c4d71">laby_gameplay_calculate_score</a></div><div class="ttdeci">int laby_gameplay_calculate_score(uint32_t computerMoves, Player_Score_str_t *player)</div><div class="ttdoc">Fonction réalisant le calcul du score final en fonction de son déplacement. Le joueur gagne 100 point...</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00026">gameplay.c:26</a></div></div>
+<div class="ttc" id="gameplay_8h_html_ac109d4e65da6bb6e34eef4fc93c6ed7d"><div class="ttname"><a href="gameplay_8h.html#ac109d4e65da6bb6e34eef4fc93c6ed7d">laby_gameplay_get_score</a></div><div class="ttdeci">uint32_t laby_gameplay_get_score(void)</div><div class="ttdoc">Retourne le score actuel du joueur. </div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00196">gameplay.c:196</a></div></div>
+<div class="ttc" id="project__defines_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="project__defines_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="project__defines_8h_source.html#l00034">project_defines.h:34</a></div></div>
+<div class="ttc" id="gameplay_8h_html_a72cfd78fb30fec04b859711f327611fe"><div class="ttname"><a href="gameplay_8h.html#a72cfd78fb30fec04b859711f327611fe">laby_gameplay_move_ghost</a></div><div class="ttdeci">int laby_gameplay_move_ghost(Laby_Cell_str_t *src, Laby_Cell_str_t *dst)</div><div class="ttdoc">Sous-fonction destinée à gérer le déplacement d&#39;un fantôme. Un fantôme a la particularité de pouvoir ...</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8c_source.html#l00092">gameplay.c:92</a></div></div>
+<div class="ttc" id="struct_player___score__str__t_html_abe902382ebcf927bbba5c0d47bf53138"><div class="ttname"><a href="struct_player___score__str__t.html#abe902382ebcf927bbba5c0d47bf53138">Player_Score_str_t::score</a></div><div class="ttdeci">uint32_t score</div><div class="ttdef"><b>Definition:</b> <a href="gameplay_8h_source.html#l00055">gameplay.h:55</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="gameplay_8h.html">gameplay.h</a></li>
+    <li class="footer">Généré le Dimanche 16 Novembre 2014 16:23:37 pour Labyrinthe par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>
